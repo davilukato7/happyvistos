@@ -1,0 +1,277 @@
+[
+  {
+    "section": "1º SEÇÃO: ESCOLHA SEU LOCAL DE ENTREVISTA",
+    "fields": [
+      {
+        "name": "local_entrevista",
+        "label": "Onde deseja realizar sua entrevista?",
+        "type": "radio-group",
+        "required": true,
+        "options": ["Brasília", "São Paulo", "Rio de Janeiro", "Recife", "Porto Alegre"]
+      }
+    ]
+  },
+  {
+    "section": "2º SEÇÃO: INFORMAÇÕES PESSOAIS",
+    "fields": [
+      { "name": "nome", "label": "Nome", "type": "text", "required": true, "grid_group": "A1" },
+      { "name": "sobrenome", "label": "Sobrenome", "type": "text", "required": true, "grid_group": "A1" },
+      { "name": "nome_passaporte", "label": "Nome Completo Conforme Passaporte", "type": "text", "required": true },
+      { "name": "data_nascimento", "label": "Data de Nascimento", "type": "date", "required": true, "grid_group": "A2" },
+      { "name": "naturalidade", "label": "Naturalidade (Cidade/Estado/País)", "type": "text", "required": true, "placeholder": "Ex: São Paulo / SP / Brasil", "grid_group": "A2" },
+      {
+        "name": "usou_outros_nomes",
+        "label": "Já usou outros nomes?",
+        "type": "select",
+        "required": false,
+        "options": ["", "Não", "Sim"],
+        "grid_group": "A3"
+      },
+      { "name": "motivo_outros_nomes", "label": "Se sim, quais e motivo?", "type": "text", "required": false, "placeholder": "Casamento, religioso, divórcio...", "grid_group": "A3" },
+      {
+        "name": "tem_telecode",
+        "label": "Tem um telecode que represente seu nome?",
+        "type": "select",
+        "required": false,
+        "options": ["Não", "Sim"],
+        "grid_group": "A4"
+      },
+      {
+        "name": "sexo",
+        "label": "Sexo",
+        "type": "select",
+        "required": false,
+        "options": ["", "Masculino", "Feminino"],
+        "grid_group": "A4"
+      },
+      {
+        "name": "estado_civil",
+        "label": "Estado Civil Atual",
+        "type": "select",
+        "required": false,
+        "options": ["", "Solteiro", "Casado", "União Estável", "Divorciado", "Viúvo"],
+        "grid_group": "A5"
+      },
+      { "name": "data_casamento_divorcio", "label": "Se Divorciado(a): Data Casamento", "type": "date", "required": false, "grid_group": "A5" },
+      { "name": "data_divorcio", "label": "Se Divorciado(a): Data Divórcio", "type": "date", "required": false, "grid_group": "A5" },
+      {
+        "group_title": "Informações sobre seus familiares",
+        "fields": [
+          { "name": "nome_pai", "label": "Nome Completo do PAI", "type": "text", "required": false, "grid_group": "F1" },
+          { "name": "nascimento_pai", "label": "Data de Nascimento (PAI)", "type": "date", "required": false, "grid_group": "F1" },
+          { "name": "nome_mae", "label": "Nome Completo da MÃE", "type": "text", "required": false, "grid_group": "F2" },
+          { "name": "nascimento_mae", "label": "Data de Nascimento (MÃE)", "type": "date", "required": false, "grid_group": "F2" }
+        ]
+      },
+      {
+        "group_title": "Dados do Cônjuge (Se casado ou união estável)",
+        "fields": [
+          { "name": "nome_conjuge", "label": "Nome do Cônjuge", "type": "text", "required": false, "placeholder": "Opcional" },
+          { "name": "nascimento_conjuge", "label": "Data de Nascimento do Cônjuge", "type": "date", "required": false, "grid_group": "C1" },
+          { "name": "nacionalidade_conjuge", "label": "Nacionalidade (País)", "type": "text", "required": false, "placeholder": "Ex: Brasil", "grid_group": "C1" }
+        ]
+      }
+    ]
+  },
+  {
+    "section": "3º SEÇÃO: INFORMAÇÕES PESSOAIS PARTE II",
+    "fields": [
+      { "name": "pais_origem", "label": "Qual seu país de origem?", "type": "text", "required": false, "value": "Brasil", "grid_group": "B1" },
+      { "name": "cpf", "label": "CPF", "type": "text", "required": false, "placeholder": "000.000.000-00", "grid_group": "B1" },
+      {
+        "name": "outra_nacionalidade",
+        "label": "Você tem ou já teve outra nacionalidade?",
+        "type": "select",
+        "required": false,
+        "options": ["Não", "Sim"],
+        "grid_group": "B2"
+      },
+      { "name": "qual_outra_nacionalidade", "label": "Se sim, qual?", "type": "text", "required": false, "grid_group": "B2" },
+      {
+        "name": "residente_outro_pais",
+        "label": "Você é residente permanente de um país que não seja seu país de origem?",
+        "type": "select",
+        "required": false,
+        "options": ["Não", "Sim"],
+        "grid_group": "B3"
+      },
+      { "name": "qual_residente_outro_pais", "label": "Se sim, qual?", "type": "text", "required": false, "grid_group": "B3" }
+    ]
+  },
+  {
+    "section": "4º SEÇÃO: ENDEREÇO E REDES SOCIAIS",
+    "fields": [
+      { "name": "endereco", "label": "Endereço Residencial (Rua, Número, Complemento)", "type": "text", "required": true },
+      { "name": "bairro", "label": "Bairro", "type": "text", "required": true, "grid_group": "E1" },
+      { "name": "cidade_estado", "label": "Cidade/Estado", "type": "text", "required": true, "grid_group": "E1" },
+      { "name": "cep", "label": "CEP", "type": "text", "required": true, "grid_group": "E1" },
+      { "name": "tel_residencial", "label": "Telefone Residencial", "type": "tel", "required": false, "grid_group": "E2" },
+      { "name": "celular", "label": "Telefone Móvel (WhatsApp)", "type": "tel", "required": true, "grid_group": "E2" },
+      { "name": "email", "label": "Endereço de E-mail", "type": "email", "required": false, "grid_group": "E2" },
+      { "name": "instagram", "label": "Instagram", "type": "text", "required": false, "placeholder": "@seu.usuario", "grid_group": "E3" },
+      { "name": "facebook", "label": "Facebook", "type": "text", "required": false, "placeholder": "Opcional", "grid_group": "E3" }
+    ]
+  },
+  {
+    "section": "5º SEÇÃO: INFORMAÇÕES DO PASSAPORTE",
+    "fields": [
+      {
+        "name": "tipo_passaporte",
+        "label": "Tipo de Passaporte",
+        "type": "select",
+        "required": true,
+        "options": ["Comum", "Oficial", "Diplomático", "Outros"],
+        "grid_group": "P1"
+      },
+      { "name": "passaporte_numero", "label": "Número do Passaporte", "type": "text", "required": true, "placeholder": "Ou 'A emitir'", "grid_group": "P1" },
+      { "name": "passaporte_cidade_estado", "label": "Cidade e Estado Emissor", "type": "text", "required": true, "grid_group": "P2" },
+      { "name": "passaporte_emissao", "label": "Data de Emissão", "type": "date", "required": false, "grid_group": "P2" },
+      { "name": "passaporte_validade", "label": "Data de Validade", "type": "date", "required": false, "grid_group": "P2" },
+      {
+        "name": "passaporte_roubado",
+        "label": "Já perdeu ou teve algum passaporte roubado?",
+        "type": "select",
+        "required": false,
+        "options": ["Não", "Sim"],
+        "grid_group": "P3"
+      },
+      { "name": "passaporte_roubado_exp", "label": "Se sim, explique brevemente:", "type": "text", "required": false, "grid_group": "P3" }
+    ]
+  },
+  {
+    "section": "6º SEÇÃO: INFORMAÇÕES DE TRABALHO",
+    "fields": [
+      { "name": "trabalho_empresa", "label": "Onde trabalha atualmente (Empresa)", "type": "text", "required": false, "grid_group": "T1" },
+      { "name": "trabalho_funcao", "label": "Qual sua função?", "type": "text", "required": false, "grid_group": "T1" },
+      { "name": "trabalho_endereco", "label": "Endereço da Empresa", "type": "text", "required": false },
+      { "name": "trabalho_telefone", "label": "Telefones da Empresa", "type": "text", "required": false, "grid_group": "T2" },
+      { "name": "trabalho_admissao", "label": "Data de Admissão", "type": "date", "required": false, "grid_group": "T2" },
+      { "name": "trabalho_renda", "label": "Qual sua renda mensal? (R$)", "type": "text", "required": false, "placeholder": "Comprovado em IR ou Contracheque", "grid_group": "T2" },
+      { "name": "trabalho_descricao", "label": "Descreva sua função", "type": "textarea", "required": false }
+    ]
+  },
+  {
+    "section": "7º SEÇÃO: INFORMAÇÕES DA EMPRESA (QUANDO EMPRESÁRIO)",
+    "description": "Preencha apenas se possuir empresa.",
+    "fields": [
+      {
+        "name": "pj_ir",
+        "label": "Possui Declaração de Imposto de Renda Pessoa Jurídica?",
+        "type": "select",
+        "required": false,
+        "options": ["Não se aplica", "Sim", "Não"],
+        "grid_group": "PJ1"
+      },
+      { "name": "pj_cnpj", "label": "Cartão CNPJ", "type": "text", "required": false, "grid_group": "PJ1" },
+      { "name": "pj_abertura", "label": "Data de Abertura", "type": "date", "required": false, "grid_group": "PJ2" },
+      { "name": "pj_faturamento", "label": "Faturamento da Empresa", "type": "text", "required": false, "grid_group": "PJ2" },
+      { "name": "pj_endereco", "label": "Endereço da Empresa", "type": "text", "required": false },
+      { "name": "pj_telefones", "label": "Telefones (Principal)", "type": "text", "required": false, "grid_group": "PJ3" },
+      { "name": "pj_email", "label": "E-mail Principal", "type": "email", "required": false, "grid_group": "PJ3" }
+    ]
+  },
+  {
+    "section": "8º SEÇÃO: ESCOLARIDADE E INFORMAÇÕES DO PAGADOR",
+    "fields": [
+      {
+        "group_title": "Informações de Escolaridade",
+        "group_description": "Você tem nível médio ou superior? (Se superior, prevalecem estas informações).",
+        "fields": [
+          { "name": "escola_instituicao", "label": "Nome da Instituição", "type": "text", "required": false, "placeholder": "Deixe em branco se não aplicável" },
+          { "name": "escola_endereco", "label": "Endereço Completo", "type": "text", "required": false },
+          { "name": "escola_curso", "label": "Curso", "type": "text", "required": false, "grid_group": "ES1" },
+          { "name": "escola_inicio", "label": "Ano e Mês Inicial", "type": "month", "required": false, "grid_group": "ES1" },
+          { "name": "escola_final", "label": "Ano e Mês Final", "type": "month", "required": false, "grid_group": "ES1" }
+        ]
+      },
+      {
+        "group_title": "Informações sobre o Pagador da Viagem",
+        "fields": [
+          { "name": "pagador_nome", "label": "Pagador (Nome)", "type": "text", "required": false, "placeholder": "Ex: Próprio, Pai, Mãe...", "grid_group": "PG1" },
+          { "name": "pagador_parentesco", "label": "Grau de Parentesco", "type": "text", "required": false, "grid_group": "PG1" },
+          { "name": "pagador_cpf", "label": "CPF do Pagador", "type": "text", "required": false, "grid_group": "PG2" },
+          { "name": "pagador_renda", "label": "Valor que recebe mensal (R$)", "type": "text", "required": false, "grid_group": "PG2" },
+          { "name": "pagador_endereco", "label": "Endereço do Pagador", "type": "text", "required": false },
+          {
+            "name": "pagador_ir",
+            "label": "Possui Declaração de Imposto de Renda?",
+            "type": "select",
+            "required": false,
+            "options": ["", "Sim", "Não"],
+            "grid_group": "PG3"
+          },
+          { "name": "pagador_estado_civil", "label": "Estado Civil do Pagador", "type": "text", "required": false, "grid_group": "PG3" },
+          { "name": "pagador_email", "label": "E-mail do Pagador", "type": "email", "required": false, "grid_group": "PG4" },
+          { "name": "pagador_telefone", "label": "Telefone do Pagador", "type": "text", "required": false, "grid_group": "PG4" }
+        ]
+      }
+    ]
+  },
+  {
+    "section": "9º SEÇÃO: LÍNGUAS, VIAGENS E HISTÓRICO",
+    "fields": [
+      { "name": "viaja_com", "label": "Vai viajar com quem?", "type": "text", "required": false, "placeholder": "Nomes ou Sozinho(a)", "grid_group": "V1" },
+      { "name": "idiomas", "label": "Você fala outro idioma além do português? Quais?", "type": "text", "required": false, "placeholder": "Inglês, Espanhol, Nenhum...", "grid_group": "V1" },
+      { "name": "viagens_5_anos", "label": "Você viajou para outros países nos últimos 05 anos? Quais e em quais datas?", "type": "textarea", "required": false, "placeholder": "Informe países e datas, ou 'Não'" },
+      {
+        "group_title": "Serviço Militar",
+        "fields": [
+          {
+            "name": "servico_militar",
+            "label": "Já participou de algum Serviço Militar?",
+            "type": "select",
+            "required": false,
+            "options": ["Não", "Sim"],
+            "grid_group": "M1"
+          },
+          { "name": "militar_unidade", "label": "Cidade, Estado e País da Unidade", "type": "text", "required": false, "grid_group": "M1" },
+          { "name": "militar_ramo", "label": "Ramo de Serviço", "type": "text", "required": false, "grid_group": "M2" },
+          { "name": "militar_posicao", "label": "Classificação/Posição", "type": "text", "required": false, "grid_group": "M2" },
+          { "name": "militar_especialidade", "label": "Especialidade Militar", "type": "text", "required": false, "grid_group": "M3" },
+          { "name": "militar_inicio", "label": "Data Início", "type": "date", "required": false, "grid_group": "M3" },
+          { "name": "militar_fim", "label": "Data Término", "type": "date", "required": false, "grid_group": "M3" }
+        ]
+      },
+      {
+        "group_title": "Histórico com os EUA",
+        "fields": [
+          {
+            "name": "visto_negado",
+            "label": "Já teve alguma solicitação de visto para os EUA negada?",
+            "type": "select",
+            "required": false,
+            "options": ["Não", "Sim"],
+            "grid_group": "H1"
+          },
+          { "name": "visto_negado_motivo", "label": "Se sim, Data e Motivo", "type": "text", "required": false, "placeholder": "Ex: 10/2021, Artigo 214(b)", "grid_group": "H1" },
+          {
+            "name": "parente_eua",
+            "label": "Tem algum parente que resida nos EUA? (Legal ou Ilegal)",
+            "type": "select",
+            "required": false,
+            "options": ["Não", "Sim"],
+            "grid_group": "H2"
+          },
+          { "name": "parente_grau", "label": "Se sim, Grau de Parentesco", "type": "text", "required": false, "grid_group": "H2" },
+          { "name": "parente_nome", "label": "Nome do Parente", "type": "text", "required": false, "grid_group": "H3" },
+          { "name": "parente_endereco", "label": "Endereço do Parente", "type": "text", "required": false, "grid_group": "H3" },
+          { "name": "parente_telefone", "label": "Telefone do Parente", "type": "text", "required": false, "grid_group": "H3" }
+        ]
+      }
+    ]
+  },
+  {
+    "section": "TERMOS E CONDIÇÕES",
+    "is_contract": true,
+    "fields": [
+      {
+        "name": "termo",
+        "label": "Declaro ter lido, entendido e aceito todas as cláusulas do contrato de prestação de serviços acima descrito. Autorizo o despachante a atuar em meu nome junto ao Consulado dos EUA.",
+        "type": "checkbox",
+        "required": true
+      },
+      { "name": "assinatura_nome", "label": "Nome Completo (Assinatura Eletrônica)", "type": "text", "required": true, "placeholder": "Digite seu nome completo", "grid_group": "ASS1" },
+      { "name": "assinatura_data", "label": "Data do Envio", "type": "date", "required": true, "grid_group": "ASS1" }
+    ]
+  }
+]
