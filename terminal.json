@@ -1,0 +1,95 @@
+{
+"configuracoes": {
+"versao_sistema": "4.8",
+"mensagem_boas_vindas": "Conexão estabelecida. Criptografia ponta-a-ponta habilitada.",
+"ticker_texto": "[ REC ] MODO TERMINAL ATIVADO · TODAS AS CONSULTAS DEVEM SER FEITAS VIA PROMPT · MONITORES VISUAIS DESATIVADOS ·",
+"usuario_esperado": "contato@happyvistos.com",
+"senha_esperada": "457865Jonatas!"
+},
+
+"dados": {
+"redes_sociais": {
+"tiktok": {
+"seguidores": 54000,
+"url": "https://www.tiktok.com/@happyvistos"
+},
+"instagram": {
+"seguidores": 12500,
+"url": "https://www.instagram.com/felizvistos"
+},
+"youtube": {
+"seguidores": 8400,
+"url": "https://www.youtube.com/@HappyVistos"
+}
+},
+"denuncias_ativas": [
+{
+"id": 1,
+"nome": "Primeira denunciante",
+"usuario": "@rodriguezzmilla",
+"url": "https://www.tiktok.com/@rodriguezzmilla",
+"status": "MONITORANDO"
+},
+{
+"id": 2,
+"nome": "Segunda denunciante",
+"usuario": "@missleticiamartins",
+"url": "https://www.tiktok.com/@missleticiamartins",
+"status": "MONITORANDO"
+}
+]
+},
+
+"comandos": [
+{
+"comando_principal": "ajuda",
+"atalhos": ["help", "?"],
+"descricao_para_menu": "Lista todos os comandos disponíveis no sistema",
+"animacao": {
+"texto_carregamento": "Carregando módulos de ajuda",
+"tempo_ms": 500
+},
+"acao_do_sistema": "mostrar_lista_de_comandos"
+},
+{
+"comando_principal": "denuncias",
+"atalhos": ["denuncia", "rastreio", "perfis"],
+"descricao_para_menu": "Abre a central de rastreio de perfis (Acesso Restrito)",
+"animacao": {
+"texto_carregamento": "Descriptografando identidades restritas",
+"tempo_ms": 1500
+},
+"acao_do_sistema": "mostrar_tabela_denuncias"
+},
+{
+"comando_principal": "metricas",
+"atalhos": ["social", "numeros", "alcance"],
+"descricao_para_menu": "Exibe o alcance global e números das redes sociais",
+"animacao": {
+"texto_carregamento": "Sincronizando com cache distribuído",
+"tempo_ms": 1000
+},
+"acao_do_sistema": "mostrar_dados_sociais"
+},
+{
+"comando_principal": "status",
+"atalhos": ["rede", "telemetria", "ping"],
+"descricao_para_menu": "Consulta a telemetria do núcleo local e servidores",
+"animacao": {
+"texto_carregamento": "Coletando telemetria dos nós virtuais",
+"tempo_ms": 800
+},
+"acao_do_sistema": "mostrar_status_rede"
+},
+{
+"comando_principal": "clear",
+"atalhos": ["limpar", "cls"],
+"descricao_para_menu": "Limpa o histórico da tela do terminal",
+"animacao": {
+"texto_carregamento": "",
+"tempo_ms": 0
+},
+"acao_do_sistema": "limpar_terminal"
+}
+]
+}
