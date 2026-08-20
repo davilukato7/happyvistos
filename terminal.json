@@ -25,9 +25,9 @@
       {
         "id": 1,
         "nome": "Primeira denunciante",
-        "usuario": "@rodriguezzmilla",
-        "url": "https://www.tiktok.com/@rodriguezzmilla",
-        "status": "MONITORANDO"
+        "usuario": "@WanaMartins",
+        "url": "#",
+        "status": "MONITORANDO, DENUNCIOU 74 VEZES NO ULTIMO MÊS"
       },
       {
         "id": 2,
@@ -35,13 +35,6 @@
         "usuario": "@missleticiamartins",
         "url": "https://www.tiktok.com/@missleticiamartins",
         "status": "MONITORANDO"
-      },
-      {
-        "id": 3,
-        "nome": "Terceira denunciante",
-        "usuario": "@WanaMartins",
-        "url": "#",
-        "status": "MONITORANDO, DENUNCIOU 74 VEZES NO ULTIMO MÊS"
       }
     ]
   },
